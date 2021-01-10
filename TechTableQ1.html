@@ -7,7 +7,7 @@
     <title>paymentForm</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method="GET">
         <h1>Payment Form</h1>
         <h2>Contact information</h2>
         <p>Name: <input type="text" name="name" required></p>
@@ -20,11 +20,13 @@
         <p>Pincode: <input type="number" name="pincode" required></p>
         <p>Email: <input type="email" name="email" id="email" required></p>
 
+        <hr>
+
         <h2>Payment Information</h2>
 
         <p>Card type:
         <select name="cardType" id="cardType">
-            <option value="">--Select a ard type--</option>
+            <option value="">--Select a card type--</option>
             <option value="visa">Visa</option>
             <option value="credit">Credit</option>
             <option value="debit">Debit</option>
