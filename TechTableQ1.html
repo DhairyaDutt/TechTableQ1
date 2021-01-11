@@ -7,38 +7,42 @@
     <title>paymentForm</title>
 </head>
 <body>
-    <form action="" method="GET">
-        <h1>Payment Form</h1>
-        <h2>Contact information</h2>
-        <p>Name: <input type="text" name="name" required></p>
-        <fieldset>
-            <legend>gender</legend>
-            <p>Male <input type="radio" name="gender"></p>
-            <p>Female <input type="radio" name="gender"></p>
-        </fieldset>
-        <p>Address: <textarea cols="100" rows="8" name="address"></textarea></p>
-        <p>Pincode: <input type="number" name="pincode" required></p>
-        <p>Email: <input type="email" name="email" id="email" required></p>
+    <div class="container">
+        <form action="" method="GET">
+            <h1 class="heading">Payment Form</h1>
+            <hr>
+            <h2>Contact information</h2>
+            <p>Name: <input type="text" name="name" placeholder="nitin rana" required></p>
+            <fieldset>
+                <legend>gender</legend>
+                <p>Male <input type="radio" name="gender"></p>
+                <p>Female <input type="radio" name="gender"></p>
+            </fieldset>
+            <p>Address: <textarea cols="100" rows="8" name="address"></textarea></p>
+            <p>Pincode: <input type="number" name="pincode" required></p>
+            <p>Email: <input type="email" name="email" id="email" required></p>
+    
+    
+            <h2>Payment Information</h2>
+    
+            <p>Card type:
+            <select name="cardType" id="cardType">
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+            </p>
+    
+            <p>Card number: <input type="number" name="cardNumber" id="cardNumber"></p>
+            <p>Expiration Date: <input type="date" name="date" id="date"</p>
+            <p>CVV: <input type="number" name="cvv" id="cvv"></p>
+            <input type="submit" value="Pay now">
+    
+        </form>
 
-        <hr>
-
-        <h2>Payment Information</h2>
-
-        <p>Card type:
-        <select name="cardType" id="cardType">
-            <option value="">--Select a card type--</option>
-            <option value="visa">Visa</option>
-            <option value="credit">Credit</option>
-            <option value="debit">Debit</option>
-        </select>
-        </p>
-
-        <p>Card number: <input type="number" name="cardNumber" id="cardNumber"></p>
-        <p>Expiration Date: <input type="date" name="date" id="date"</p>
-        <p>CVV: <input type="number" name="cvv" id="cvv"></p>
-        <button id="submit" type="submit">Pay Now</button>
-
-    </form>
+    </div>
+    
     
 </body>
 </html>
